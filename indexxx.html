@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Dental Clinic | Symmetrical Dental Masterpieces</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon"><i data-lucide="sparkles"></i></span>
+        AURA <span class="logo-weight">CLINIC</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">Why Aura</a>
+        <a href="#doctors">Specialists</a>
+        <a href="#gallery">Before & After</a>
+        <a href="#technology">Technology</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Book Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="badge"><i data-lucide="sparkles"></i> Luxury Private Clinic</span>
+        <h1>Engineering <br> <span class="text-gradient">Symmetrical</span> <br> Dental Masterpieces</h1>
+        <p>Integrating Harvard-trained surgical expertise with CAD/CAM dental mills and interactive smile mapping. We redefine luxury clinical aesthetics in Beverly Hills.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-gradient">Schedule 3D Scan <i data-lucide="arrow-up-right"></i></a>
+          <a href="#services" class="btn btn-outline">Explore Solutions</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="interactive-card hero-gallery-card">
+          <!-- Real Life Pictures Container -->
+          <div class="hero-images-container">
+            <img id="hero-img-suite" class="hero-img active" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Aura Dental Surgery Suite">
+            <img id="hero-img-lab" class="hero-img" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=800" alt="Aura CAD/CAM lab">
+            <img id="hero-img-lounge" class="hero-img" src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800" alt="Aura Recover Suite">
+          </div>
+          
+          <div class="card-header">
+            <div class="header-left">
+              <span class="card-title-prefix">Clinical Coordinates</span>
+              <span class="card-title" id="active-photo-title">Aesthetic Surgery Suite 01</span>
+            </div>
+            <div class="live-indicator">
+              <span class="pulse-dot"></span> Beverly Hills CA
+            </div>
+          </div>
+          
+          <div class="switcher-tabs">
+            <button class="tab-btn active" data-photo="suite">Surgery Suite</button>
+            <button class="tab-btn" data-photo="lab">CAD/CAM Lab</button>
+            <button class="tab-btn" data-photo="lounge">Recovery Suite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTICS SECTION -->
+  <section class="stats">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon"><i data-lucide="award"></i></div>
+        <h3>18+</h3>
+        <p>Years Surgery Expert</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i data-lucide="star"></i></div>
+        <h3>5.0</h3>
+        <p>Patient Star Rating</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i data-lucide="heart"></i></div>
+        <h3>12K+</h3>
+        <p>Successful Smiles</p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon"><i data-lucide="shield-check"></i></div>
+        <h3>99.8%</h3>
+        <p>Implant Success Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services">
+    <div class="section-header">
+      <div>
+        <span class="section-badge">Comprehensive Solutions</span>
+        <h2>Pristine <span class="text-gradient">Treatments</span></h2>
+      </div>
+      <a href="#contact" class="explore-link">Book Appointment <i data-lucide="arrow-right"></i></a>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-meta">
+          <span class="service-tag">Surgical</span>
+          <span class="service-price">$2,500</span>
+        </div>
+        <h3>Dental Implants</h3>
+        <p>Bio-compatible titanium root restorations providing a permanent foundation for custom ceramic crowns.</p>
+        <div class="card-footer">
+          <a href="#contact">Schedule Slot</a>
+          <i data-lucide="arrow-up-right" class="arrow"></i>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="card-meta">
+          <span class="service-tag">Cosmetic</span>
+          <span class="service-price">$1,200</span>
+        </div>
+        <h3>Porcelain Veneers</h3>
+        <p>Handcrafted ultra-thin glass shells bonded to teeth for Hollywood-grade alignment and shade.</p>
+        <div class="card-footer">
+          <a href="#contact">Schedule Slot</a>
+          <i data-lucide="arrow-up-right" class="arrow"></i>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="card-meta">
+          <span class="service-tag">Orthodontics</span>
+          <span class="service-price">$4,500</span>
+        </div>
+        <h3>Invisalign Aligners</h3>
+        <p>Clear, removable aligner sheets to straighten smiles comfortably without metallic wire brackets.</p>
+        <div class="card-footer">
+          <a href="#contact">Schedule Slot</a>
+          <i data-lucide="arrow-up-right" class="arrow"></i>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="card-meta">
+          <span class="service-tag">Cosmetic</span>
+          <span class="service-price">$400</span>
+        </div>
+        <h3>Laser Whitening</h3>
+        <p>Advanced clinical cold-light technology restoring up to 8 shades in a single 45-minute session.</p>
+        <div class="card-footer">
+          <a href="#contact">Schedule Slot</a>
+          <i data-lucide="arrow-up-right" class="arrow"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="about" class="about">
+    <div class="about-header text-center">
+      <span class="section-badge">Standard of Excellence</span>
+      <h2>Why Discerning <span class="text-gradient-teal">Patients</span> Choose Aura</h2>
+      <p>We combine state-of-the-art diagnostic imaging suites with private client coordinates to provide a luxury private hospital experience.</p>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon"><i data-lucide="graduation-cap"></i></div>
+        <h3>Ivy League Faculty</h3>
+        <p>Our reconstructive surgeons hold doctoral degrees from Harvard and Penn, leading clinical aesthetic research.</p>
+      </div>
+      
+      <div class="about-card">
+        <div class="about-icon"><i data-lucide="sliders"></i></div>
+        <h3>In-House CAD/CAM Milling</h3>
+        <p>Compute, design, and mill your custom porcelain veneers in under 20 minutes with micron-level accuracy.</p>
+      </div>
+      
+      <div class="about-card">
+        <div class="about-icon"><i data-lucide="flame"></i></div>
+        <h3>Waterlase Painless Laser</h3>
+        <p>Perform soft-tissue contouring and root sterilizations virtually painlessly with zero bleeding or scalpels.</p>
+      </div>
+      
+      <div class="about-card">
+        <div class="about-icon"><i data-lucide="shield-check"></i></div>
+        <h3>Concierge Recovery Suites</h3>
+        <p>Relax post-treatment in private recovery rooms featuring ambient wellness lighting and beverage service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET THE DOCTORS -->
+  <section id="doctors" class="doctors">
+    <div class="about-header text-center">
+      <span class="section-badge">Elite Faculty</span>
+      <h2>Ivy League Trained <span class="text-gradient">Specialists</span></h2>
+      <p>Our surgical faculties hold certifications and academic roles at top institutions, ensuring world-class aesthetic solutions.</p>
+    </div>
+    
+    <div class="doctors-grid">
+      <div class="doctor-card">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=600" alt="Dr. Sarah Lawrence">
+        </div>
+        <div class="doctor-info">
+          <span class="doc-spec">Aesthetic Prosthodontist</span>
+          <h3>Dr. Sarah Lawrence</h3>
+          <p>Harvard School of Dental Medicine</p>
+          <div class="doc-footer">
+            <a href="#contact">Request Consultation <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="doctor-card">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600" alt="Dr. Marcus Vance">
+        </div>
+        <div class="doctor-info">
+          <span class="doc-spec">Oral & Maxillofacial Surgeon</span>
+          <h3>Dr. Marcus Vance</h3>
+          <p>UPenn Reconstructive Surgery Fellow</p>
+          <div class="doc-footer">
+            <a href="#contact">Request Consultation <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="doctor-card">
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600" alt="Dr. Elena Rostova">
+        </div>
+        <div class="doctor-info">
+          <span class="doc-spec">Orthodontic Director</span>
+          <h3>Dr. Elena Rostova</h3>
+          <p>Columbia Orthodontics Faculty</p>
+          <div class="doc-footer">
+            <a href="#contact">Request Consultation <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER GALLERY -->
+  <section id="gallery" class="gallery">
+    <div class="about-header text-center">
+      <span class="section-badge">Interactive Smile Transformation</span>
+      <h2>Witness Symmetrical <span class="text-gradient-teal">Aesthetics</span></h2>
+      <p>Interact with our diagnostic records. Drag or hover the handle to compare pre-clinical layouts with our custom handcrafted veneers.</p>
+    </div>
+    
+    <div class="gallery-wrapper">
+      <div class="comparison-container" id="before-after-slider">
+        <img class="image-after" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600" alt="After Treatment">
+        <div class="label-after">AFTER</div>
+        
+        <div class="image-before-wrapper">
+          <img class="image-before" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600" alt="Before Treatment">
+          <div class="label-before">BEFORE</div>
+        </div>
+        
+        <div class="slider-handle">
+          <div class="handle-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gallery-content">
+        <h3>Bespoke Veneer Placement</h3>
+        <p>Every porcelain restoration is handcrafted to mimic the light reflection profiles of natural dental enamel. We restore shape, symmetry, and structure in under 3 visits.</p>
+        <ul class="points-list">
+          <li><i data-lucide="check-circle-2"></i> Digitally aligned Smile Design mapping curves</li>
+          <li><i data-lucide="check-circle-2"></i> Hand-layered feldspathic porcelain materials</li>
+          <li><i data-lucide="check-circle-2"></i> Minimal-prep microabrasions preserving biological dentitions</li>
+          <li><i data-lucide="check-circle-2"></i> Lifetime durability assurances and recovery logs</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Schedule Aesthetic Diagnostic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODERN TECHNOLOGY -->
+  <section id="technology" class="technology">
+    <div class="about-header text-center">
+      <span class="section-badge">Clinical Tech</span>
+      <h2>State-of-the-Art <span class="text-gradient">Equipment</span></h2>
+      <p>We invest in certified ISO diagnostic machinery to secure painless operations and durable placements.</p>
+    </div>
+    
+    <div class="tech-showcase">
+      <div class="tech-nav">
+        <button class="tech-tab active" data-tech="0">
+          <span class="step-num">Step 01</span>
+          <span class="step-title">Intraoral 3D Scanner</span>
+        </button>
+        <button class="tech-tab" data-tech="1">
+          <span class="step-num">Step 02</span>
+          <span class="step-title">CAD/CAM Ceramic Mill</span>
+        </button>
+        <button class="tech-tab" data-tech="2">
+          <span class="step-num">Step 03</span>
+          <span class="step-title">Waterlase Dental Laser</span>
+        </button>
+      </div>
+      
+      <div class="tech-content-box">
+        <div class="tech-slide active" id="tech-slide-0">
+          <div class="tech-info">
+            <span class="tech-spec">Primescan 3D Imaging • 20μm Precision</span>
+            <h3>Intraoral 3D Scanner</h3>
+            <p>Captures 6,000 frames/sec for immediate digital impressions. No uncomfortable molding putty needed.</p>
+          </div>
+          <div class="tech-image">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600" alt="3D Scanner">
+          </div>
+        </div>
+        
+        <div class="tech-slide" id="tech-slide-1">
+          <div class="tech-info">
+            <span class="tech-spec">Cerec Primemill • Diamond Burs</span>
+            <h3>CAD/CAM Ceramic Mill</h3>
+            <p>Milled porcelain veneers and dental crowns in-house. Custom porcelain layers ready in under 20 minutes.</p>
+          </div>
+          <div class="tech-image">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600" alt="Ceramic Mill">
+          </div>
+        </div>
+        
+        <div class="tech-slide" id="tech-slide-2">
+          <div class="tech-info">
+            <span class="tech-spec">YSGG Laser Technology • Bleed-Free</span>
+            <h3>Waterlase Dental Laser</h3>
+            <p>Uses laser-energized water molecules to cut tissue precisely with virtually zero anesthesia needed.</p>
+          </div>
+          <div class="tech-image">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600" alt="Dental Laser">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials-wrapper">
+      <span class="section-badge">Verified Logs</span>
+      
+      <div class="testimonials-container">
+        <div class="testimonial-slide active" id="test-slide-0">
+          <div class="stars-row">
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+          </div>
+          <blockquote>"Aura completely redefined my expectations of clinical care. The 3D smile mapping previewed my exact veneer placement, and the final results are a work of art."</blockquote>
+          <div class="author-info">
+            <h4>Victoria Sterling</h4>
+            <p>Creative Director • Beverly Hills</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide" id="test-slide-1">
+          <div class="stars-row">
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+            <i data-lucide="star" class="fill"></i>
+          </div>
+          <blockquote>"The in-house CAD/CAM ceramic milling prepared my molar restoration in one visit. Highly efficient surgical precision combined with a luxury private hospital experience."</blockquote>
+          <div class="author-info">
+            <h4>Harrison Vance</h4>
+            <p>Technology Partner • Los Angeles</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dots-nav">
+        <button class="dot-btn active" data-test="0"></button>
+        <button class="dot-btn" data-test="1"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSURANCE PARTNERS -->
+  <section class="insurance">
+    <p class="ins-title">Accepted PPO Networks</p>
+    <div class="ins-logos">
+      <span>DELTA DENTAL</span>
+      <span>Aetna</span>
+      <span>CIGNA</span>
+      <span>MetLife</span>
+      <span>UnitedHealthcare</span>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq">
+    <div class="about-header text-center">
+      <span class="section-badge">Frequently Asked</span>
+      <h2>Clinical <span class="text-gradient">FAQ</span></h2>
+    </div>
+    
+    <div class="faq-container">
+      <div class="faq-card">
+        <button class="faq-trigger">
+          <span>How long does a complete porcelain veneer smile makeover take?</span>
+          <i data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p>Typically, it takes just 2 to 3 visits. During the first visit, we perform a 3D intraoral scan and design your custom mockups. On the second visit, we prepare the teeth and place temporary aesthetic veneers. By the third visit, we secure your final handcrafted porcelain veneers.</p>
+        </div>
+      </div>
+      
+      <div class="faq-card">
+        <button class="faq-trigger">
+          <span>Are your micro-laser root canal procedures painful?</span>
+          <i data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p>Not at all. We utilize Waterlase dental lasers and advanced computer-controlled anesthesia that delivers targeted numbing. Laser endodontics sterilizes the root canal microscopically, resulting in minimal post-treatment swelling and a completely painless process.</p>
+        </div>
+      </div>
+      
+      <div class="faq-card">
+        <button class="faq-trigger">
+          <span>Do you accept international patients or offer translation support?</span>
+          <i data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p>Yes, Aura Clinic frequently accommodates international patients seeking full mouth reconstruction. We coordinate airport pickups, secure luxury hotel bookings in Beverly Hills, and offer private translation support throughout your clinical stay.</p>
+        </div>
+      </div>
+      
+      <div class="faq-card">
+        <button class="faq-trigger">
+          <span>What is your cancellation or rescheduling policy?</span>
+          <i data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="faq-content">
+          <p>We request that you reschedule or cancel appointments at least 24 hours in advance. Because we reserve dedicated surgical suites and doctor blocks for each luxury session, late cancellations may incur a reservation fee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & MAP SECTION -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <div class="contact-form-side">
+        <div class="form-header">
+          <span class="section-badge">Aura Concierge</span>
+          <h2>Request Smile Consultation</h2>
+        </div>
+        <form id="appointment-form" onsubmit="event.preventDefault(); alert('Message logged at concierge desk!');">
+          <div class="form-row">
+            <input type="text" required placeholder="Full Name" class="input-field">
+            <input type="email" required placeholder="Email Address" class="input-field">
+          </div>
+          <textarea required rows="5" placeholder="Describe your aesthetic goals or symptoms..." class="input-field"></textarea>
+          <button type="submit" class="btn btn-gradient btn-full">Send Request</button>
+        </form>
+      </div>
+      
+      <div class="contact-map-side">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.7592398418045!2d-118.40316498522304!3d34.07567702392762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c8cbfef5787834!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1626027581290!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+          title="Aura Dental Google Map"
+        ></iframe>
+        <div class="map-overlay">
+          <h4>Aura Private Hospital</h4>
+          <p><i data-lucide="map-pin"></i> 742 Evergreen Terrace, Beverly Hills, CA 90210</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon"><i data-lucide="sparkles"></i></span>
+          AURA <span class="logo-weight">CLINIC</span>
+        </a>
+        <p>Premium reconstructive and cosmetic dental coordinates in Beverly Hills. Symmetrical engineering designed to last.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <a href="#services">Services</a>
+        <a href="#about">Why Choose Us</a>
+        <a href="#doctors">Our Faculty</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Clinical Consents</a>
+        <a href="#">Staff Portal</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contact</h4>
+        <p><i data-lucide="phone"></i> +1 (310) 902-1000</p>
+        <p><i data-lucide="mail"></i> concierge@auradental.com</p>
+        <p><i data-lucide="clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura Clinic. Handcrafted in Beverly Hills. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="scripttt.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
